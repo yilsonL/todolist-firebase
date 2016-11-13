@@ -1,0 +1,96 @@
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+// Customize
+.svg-icon {
+  &-done {
+    width: 0.8em;
+    height: 0.8em;
+    margin: 0 1em 0 0;
+    cursor: pointer;
+    padding: 4px;
+    border: 2px solid $green3;
+    transition: all 0.4s;
+
+    path,
+    polygon,
+    rect {
+      fill: $green3;
+    }
+
+    &:hover {
+      width: 1.5em;
+      height: 1.5em;
+    }
+
+  }
+
+  &-undo {
+    width: 1.7em;
+    height: 1.7em;
+    margin: 0 0.8em 0 0;
+    cursor: pointer;
+    transition: all 0.4s;
+
+    path,
+    polygon,
+    rect {
+      fill: $blue4;
+    }
+
+    &:hover {
+      width: 2.25em;
+      height: 2.25em;
+    }
+  }
+
+  &-remove, &-edit {
+    width: 1.3em;
+    height: 1.3em;
+    margin: 1em;
+    cursor: pointer;
+    align-self: center;
+
+    path,
+    polygon,
+    rect {
+      fill: $white;
+    }
+  }
+
+  &-edit {
+    margin: 1em 0 1em 1em;
+  }
+}
+
+// https://octicons.github.com/
+.octicon {
+  &-mark-github {
+    height: 28px;
+  }
+
+  &:hover {
+    path,
+    polygon,
+    rect {
+      fill: $blue4;
+    }
+  }
+}

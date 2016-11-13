@@ -1,0 +1,14 @@
+.container__header .button-group {
+  display: flex;
+
+  button {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container__header .button-group button {
+    margin: 0 0.1em;
+  }
+}

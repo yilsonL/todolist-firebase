@@ -1,0 +1,74 @@
+body, html {
+  font-family: $font-family1;
+  background: $white;
+}
+
+button {
+  background: $blue2;
+  border: none;
+  color: $white;
+  cursor: pointer;
+  font-family: $font-family1;
+  font-size: 0.9em;
+  padding: 0.7em 0.4em;
+  transition: all 0.4s;
+
+  &:hover {
+    background: $blue4;
+  }
+}
+
+.empty {
+  color: $grey1;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.logout {
+  background: $red4;
+  margin: 0;
+  width: 100%;
+
+  &:hover {
+    background: $red6;
+  }
+}
+
+// Mobile
+.wrapper, .container, .container__header, .container__footer, .container__login {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    width: 60%;
+    margin: 1em auto;
+  }
+
+  .logout {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .wrapper {
+    width: 45%;
+    margin: 1em auto;
+  }
+  .container__footer {
+    width: 85%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .wrapper {
+    width: 33%;
+    margin: 1.5em auto;
+  }
+}

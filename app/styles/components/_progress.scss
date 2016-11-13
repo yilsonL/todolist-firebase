@@ -1,0 +1,14 @@
+.progress {
+  background: $red7;
+  height: 0.15em;
+  margin: 0 auto 2.5em auto;
+  transition: all .5s ease;
+
+  &-completed {
+    background: $green3;
+  }
+
+  &-half {
+    background: $yellow1;
+  }
+}

@@ -1,0 +1,73 @@
+.container__header .main-input, .container__header .main-input:focus {
+  background: none;
+  border: 0;
+  border-bottom: 2px solid $blue4;
+  border-radius: 0;
+  box-shadow: none;
+  color: $blue5;
+  font-family: $font-family2, $font-family1;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  outline: none;
+  width: 95%;
+  display: block;
+  margin: 1em auto 0.2em auto;
+  text-align: center;
+
+  &::-webkit-input-placeholder {
+    color: $grey1;
+    font-family: $font-family1;
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 0em;
+  }
+  &:-moz-placeholder {
+    color: $grey1;
+    font-family: $font-family1;
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 0em;
+  }
+  &::-moz-placeholder {
+    color: $grey1;
+    font-family: $font-family1;
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 0em;
+  }
+  &:-ms-input-placeholder {
+    color: $grey1;
+    font-family: $font-family1;
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 0em;
+  }
+  &::-ms-input-placeholder {
+    color: $grey1;
+    font-family: $font-family1;
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 0em;
+  }
+}
+
+.todo-input, .todo-input:focus {
+  background: none;
+  border: 0;
+  border-bottom: 1px solid $blue4;
+  border-radius: 0;
+  box-shadow: none;
+  color: $blue5;
+  font-family: $font-family1;
+  font-size: 1em;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+@media only screen and (min-width: 1280px) {
+  .container__header .main-input, .container__header .main-input:focus {
+    width: 100%;
+  }
+}
