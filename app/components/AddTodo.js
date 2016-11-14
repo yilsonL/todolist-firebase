@@ -9,7 +9,7 @@ class AddTodo extends React.Component {
     e.preventDefault();
     var todoText = this.refs.todoText.value.trim();
 
-    if(todoText.length > 0) {
+    if(todoText.length > 0 && todoText.length <= 150) {
       this.refs.todoText.value = '';
       this.props.dispatch(actions.startAddTodo(todoText));
     } else {
@@ -21,7 +21,7 @@ class AddTodo extends React.Component {
     return(
       <div>
         <form onSubmit={this.handleSubmit.bind(this)}>
-          <input className="main-input" autoFocus="true" type="text" ref="todoText" placeholder="What needs to be done?" />
+          <input className="main-input" autoFocus="true" type="text" ref="todoText" placeholder="What needs to be done?" maxLength="150" />
         </form>
       </div>
     )

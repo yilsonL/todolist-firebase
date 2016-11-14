@@ -19,7 +19,7 @@ class Todo extends React.Component {
   }
 
   handleSave(id, text) {
-    if(this.props.text !== text) {
+    if(this.props.text !== text && text.length <= 150) {
       this.props.dispatch(actions.startEditTodo(id, text));
     }
   }
@@ -46,6 +46,12 @@ class Todo extends React.Component {
     }
   }
 
+  handleFocus(e) {
+    var strLength = e.target.value.length * 2;
+
+    e.target.setSelectionRange(strLength, strLength);
+  }
+
   handleMouseEnter() {
     this.setState({right: -5.6, opacity: 1})
   }
@@ -69,9 +75,11 @@ class Todo extends React.Component {
             type="text"
             className="todo-input"
             autoFocus="true"
+            onFocus={this.handleFocus.bind(this)}
             defaultValue={text}
             onBlur={this.handleBlur.bind(this)}
             onKeyDown={this.handleEnter.bind(this)}
+            maxLength="150"
           />
         )
       } else {
